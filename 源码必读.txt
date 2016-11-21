@@ -1,0 +1,38 @@
+﻿一、源码描述
+    本案例教你如何使用CSkin界面库，在winform平台做出《彗星小助手》的界面效果，本案例实现
+    了部分功能，主要是展现界面的属性设置流程和界面库的使用。可以作为学习交流使用，感兴趣的
+    朋友们可以下载研究一下。
+二、更新功能
+    1. 修复SkinPanel滚动条不显示的问题。
+    2. 修复SkinPanel右下边框不显示的问题。
+    3. 修复好友列表头像闪烁的一些BUG。
+    4. 修复SkinMain异形窗体点击任务栏最小化操作。
+    5. 加入内置工具类FastBitmap,此类用来快速Bitmap读写像素，
+    如何使用看：http://bbs.cskin.net/thread-83-1-1.html。
+    6. 修复截图控件的未选框双击错误BUG，增加截图控件属性BmpLayerCurrent：控件所截图的图片。
+    7. SkinToolStrip添加BaseItemNorml属性，BaseItem默认背景图。
+    8. 修复SkinComboBox下拉框项的细节样式。
+    9. 加入SkinFileTansfersContainer控件与SkinFileTransfersItem控件
+    SkinFileTansfersContainer：文件传输列表容器，这里面内置Add,Remove,Search等操作ItemList方法。
+    SkinFileTransfersItem：文件传输列表项，用于添加进列表容器。
+    10. SkinToolStrip控件添加BindTabControl=(绑定要操作的TabControl)属性，绑定后点击
+    ToolStripButton就可以根据ToolStripButton中的Tag=(TabPage的Index值)进行切换TabPage。
+    11. 优化设计时SkinTabControl略卡的问题。
+    12. SkinTabePage添加属性（BorderColor：边框颜色）。
+    13. 修复好友列表闪烁状态下好友被删除，分组依然闪烁。
+    14. SkinButton、SkinCheckBox、SkinRadioButton添加属性（IsEnabledDraw：是否画禁用状态
+    下的效果，默认true）。
+    15. 好友列表添加三个事件：
+   （DownSubItem：用鼠标按下子项时发生）
+   （UpSubItem：用鼠标按下并释放子项时发生）
+   （ClickSubItem：用鼠标单击子项时发生）
+    16. SkinTabControl添加两个事件：
+   （TabePageClosed：TabPage容器关闭后。）
+   （TabePageClosing：TabPage容器关闭前。）
+    17. 加入彗星小助手案例DEMO（不带Html编辑器版本CSkin.dll）。
+三、注意事项
+    1、开发环境为Visual Studio 2010，无数据库，使用.net 2.0开发。
+    2、该源码仅适合学习交流使用，具体的使用请参照项目中的使用协议文档。
+    3、注意：由于部分免费用户无法加入工具箱，经检测是里面的一个Html编辑器控件不兼容的问题，
+    在问题兼容之前，现在分发两个版本（一个：带Html编辑器版本 一个：不带Html编辑器版本）。
+作者：345015918
